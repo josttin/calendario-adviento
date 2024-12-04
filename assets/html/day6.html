@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Playlist Personalizado</title>
+    <link rel="stylesheet" href="../css/styles6.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generador de Playlist Personalizado</h1>
+        <form id="moodForm">
+            <label for="mood">Recuerda revisar con frecuencia y descubriras nuevas</label>
+            <select id="mood" name="mood">
+                <option value="relajante">Relajante</option>
+                <option value="fiesta">Fiesta</option>
+                <option value="romántica">Romántica</option>
+                <option value="motivacional">Motivacional</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="viaje">Viaje</option>
+                <option value="nostalgia">Nostalgia</option>
+            </select>
+            <button type="submit">Generar Playlist</button>
+        </form>
+
+        <div id="playlistResults" class="hidden">
+            <h2>Playlist recomendada:</h2>
+            <ul id="playlist"></ul>
+        </div>
+    </div>
+
+    <script src="../js/day6.js"></script>
+</body>
+</html>
+
+

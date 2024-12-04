@@ -1,0 +1,122 @@
+/* General */
+body {
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffdee9, #b5fffc); /* Fondo suave */
+    color: #2c3e50;
+    overflow-y: auto;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2px;
+    background: linear-gradient(135deg, #ffdee9, #b5fffc); /* Degradado romántico */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Encabezado */
+  header {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  
+  h1 {
+    color: #c0392b; /* Rojo cálido */
+    font-size: 2rem;
+    margin-bottom: 2px;
+  }
+  
+  h2 {
+    color: #8e44ad; /* Púrpura romántico */
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2px;
+    color: aqua; /* Azul-gris oscuro */
+  }
+  
+  
+/* Contenedor general */
+#timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    background: linear-gradient(135deg, #ffdee9, #b5fffc); /* Degradado romántico */
+    font-family: 'Dancing Script', cursive; /* Fuente estilizada */
+    margin-bottom: 150px; /* Espacio extra debajo */
+  }
+  
+  /* Estilo de las tarjetas */
+  .timeline-item {
+    position: relative;
+    width: 195px;
+    height: 245px;
+    overflow: hidden;
+    border-radius: 15px; /* Bordes más suaves */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Imagen dentro de la tarjeta */
+  .timeline-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 15px; /* Mantener bordes suaves en la imagen */
+  }
+
+  .timeline-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+  }
+  
+  /* Contenido superpuesto */
+  .timeline-item .timeline-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Dancing Script', cursive; /* Fuente romántica */
+    font-size: 1.2rem;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Efecto hover (agrandamiento) */
+  .timeline-item:hover {
+    transform: scale(1.6);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .timeline-item:hover img {
+    transform: scale(1.2);
+  }
+  
+  .timeline-item:hover .timeline-content {
+    opacity: 1;
+  }
+  

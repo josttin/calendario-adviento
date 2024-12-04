@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día 2 - Nuestra Historia Continúa</title>
+  <!-- Enlace a Bootstrap y tu archivo CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles2.css">
+</head>
+<body>
+  <div class="container content-container py-5">
+    <!-- Bienvenida Día 2 -->
+    <div class="text-center mb-5">
+      <h1 class="text-primary">Bienvenida al Día 2</h1>
+      <p class="lead">Veamos que tan buena eres, hoy tenemos unas preguntas para ustedes, noviecitasao.</p>
+    </div>
+
+    <!-- Sección 1: Juego de Preguntas y Respuestas -->
+<div class="row mb-4">
+  <div class="col-12 text-center">
+    <h2 class="text-danger">Juego de Preguntas y Respuestas</h2>
+    <p>Por cada equivocacion me debes 1 besito.</p>
+  </div>
+
+  <div class="col-12">
+    <form id="quiz-form" onsubmit="event.preventDefault(); validateQuiz();">
+      <div class="mb-3">
+        <label for="q1" class="form-label">¿Qué fue lo primero que cocinaste para mí?</label>
+        <input type="text" id="q1" class="form-control" placeholder="Tu respuesta">
+      </div>
+
+      <div class="mb-3">
+        <label for="q2" class="form-label">¿Qué fue lo primero que me gustó de ti?</label>
+        <input type="text" id="q2" class="form-control" placeholder="Tu respuesta">
+      </div>
+
+      <div class="mb-3">
+        <label for="q3" class="form-label">¿Cuáles son mis 2 animes favoritos?</label>
+        <input type="text" id="q3" class="form-control" placeholder="Tu respuesta">
+      </div>
+
+      <div class="mb-3">
+        <label for="q4" class="form-label">¿Mis personajes favoritos de anime son?</label>
+        <input type="text" id="q4" class="form-control" placeholder="Tu respuesta">
+      </div>
+
+      <div class="mb-3">
+        <label for="q5" class="form-label">¿Te casarías conmigo en el futuro?</label>
+        <input type="text" id="q5" class="form-control" placeholder="Tu respuesta">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+    </form>
+  </div>
+</div>
+
+    <!-- Sección 2: Sopa de Letras (oculta inicialmente) -->
+    <div class="row mb-4" id="word-search-section" style="display:none;">
+      <div class="col-12 text-center">
+        <h2 class="text-danger">Sopa de Letras</h2>
+        <p>cada pista cuesta 1 beso</p>
+      </div>
+
+      <div class="col-12 text-center">
+        <div id="word-search">
+          <!-- La sopa de letras se generará aquí -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Conclusión: Mensaje Final (oculto inicialmente) -->
+    <div class="row mb-4" id="conclusion-section" style="display:none;">
+      <div class="col-12 text-center">
+        <h2 class="text-primary">¡Felicidades!</h2>
+        <p class="lead">¡Has completado la sopa de letras! Aquí te dejo un video especial para ti.</p>
+        <video controls class="w-100 rounded shadow">
+          <source src="../../public/images/PremioSopaDeLetra.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enlace a Bootstrap JS y tu archivo JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/scripts2.js"></script>
+</body>
+</html>
+

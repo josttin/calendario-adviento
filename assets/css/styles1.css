@@ -1,0 +1,147 @@
+/* Fondo de la página con degradado romántico */
+body {
+  background: linear-gradient(120deg, #ffe4e1, #ffb6c1);
+  background-attachment: fixed; /* Fija el fondo para dar un efecto moderno */
+  background-size: cover;
+  color: #333;
+}
+
+/* Estilos generales */
+.content-container {
+  margin-bottom: 50px;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(145deg, #fff7f7, #ffe8e8); /* Degradado sutil */
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png'); /* Textura ligera */
+  background-blend-mode: lighten;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  padding: 20px;
+  border: 2px solid rgba(240, 101, 67, 0.3); /* Borde decorativo */
+}
+
+/* Efecto en los encabezados */
+h1, h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del encabezado principal */
+h1 {
+  font-size: 2.5rem;
+  color: #f06543;
+  font-family: 'Lucida Handwriting', cursive;
+}
+
+/* Encabezados secundarios */
+h2 {
+  font-size: 1.75rem;
+  color: #d9534f;
+  font-family: 'Georgia', serif;
+}
+
+/* Encabezado final */
+h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  color: #9b9b9b;
+}
+
+/* Imágenes y videos */
+.media-item {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de los elementos que se desplazan */
+.scrolling-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+/* Hover en las imágenes */
+.media-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+}
+
+/* Contenedor de texto e imágenes */
+.media-item-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 600px;
+}
+
+/* Imágenes y videos */
+.media-item {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto asociado */
+.media-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 500px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Pequeños detalles decorativos */
+body:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/heart-pattern.png'); /* Patrón sutil */
+  opacity: 0.1; /* Patrón muy suave */
+  z-index: -1;
+}
+
+/* Animaciones iniciales */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden-message {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: #6c757d; /* Color gris claro */
+  opacity: 0.5; /* Semitransparente */
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.hidden-message:hover {
+  opacity: 1; /* Visible al hacer hover */
+  transform: translateY(0); /* Sube un poco */
+  color: #ff69b4; /* Cambia a un rosa suave */
+}

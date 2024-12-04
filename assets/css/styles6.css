@@ -1,0 +1,161 @@
+/* Estilos Generales */
+body {
+    background-color: #ffebf2; /* Fondo suave pero colorido */
+    font-family: 'Playfair Display', serif; /* Tipografía elegante y sofisticada */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto; /* Permite el desplazamiento vertical en toda la página */
+    margin: 100px 0; /* Separación superior e inferior */
+}
+
+h1 {
+    color: #ff4081; /* Rosa vibrante para el título */
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700; /* Título más destacado */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil para resaltar */
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500; /* Peso intermedio para el subtítulo */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    text-align: center;
+    transform: translateY(-20px); /* Desplazar ligeramente hacia arriba */
+    margin: 30px 0; /* Separación superior e inferior */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.3rem;
+    color: #444;
+    text-align: left;
+    font-weight: 600;
+}
+
+select {
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: 2px solid #ff4081; /* Borde rosa */
+    outline: none;
+    background-color: #ffe1f0; /* Fondo suave rosa claro */
+    color: #ff4081; /* Texto rosa */
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    border-color: #f50057; /* Efecto hover con un tono más oscuro */
+}
+
+button {
+    background-color: #ff4081; /* Rosa vibrante para el botón */
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f50057; /* Color más oscuro en hover */
+    transform: scale(1.05); /* Efecto de aumento sutil */
+}
+
+button:active {
+    transform: scale(0.98); /* Efecto de reducción al hacer clic */
+}
+
+/* Estilo de la lista de canciones */
+#playlistResults {
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.playButton {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.playButton:hover {
+    background-color: #f50057; /* Color más oscuro en hover */
+    transform: scale(1.05); /* Aumento sutil al pasar el ratón */
+}
+
+button.playButton:active {
+    transform: scale(0.98); /* Efecto activo de presión */
+}
+
+/* Pantalla emergente */
+.hidden {
+    display: none;
+}
+
+/* Estilo de la lista de canciones */
+#playlistResults {
+    margin-top: 30px;
+    max-height: 400px; /* Limitar la altura del contenedor */
+    overflow-y: auto; /* Habilitar desplazamiento vertical */
+    padding-right: 10px; /* Espacio para la barra de desplazamiento */
+}
+
+.playButton {
+    background-color: #ff4081;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playButton:hover {
+    background-color: #f50057; /* Cambio de color al pasar el ratón */
+}
+
+.playButton:active {
+    transform: scale(0.98);
+}

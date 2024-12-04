@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Interactiva</title>
+    <!-- Agregar Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles4.css">
+</head>
+<body>
+    <!-- Encabezado romántico -->
+    <header>
+        <h1>Día 4: Carta de amor y recuerdos</h1>
+        <p>Bienvenido a esta experiencia especial. Estoy feliz de compartir mis pensamientos y recuerdos contigo.</p>
+      </header>
+
+    <!-- Contenedor de los mensajes -->
+    <section id="message-container">
+        <div class="message">
+            <h2>¡Hola, amor!</h2>
+            <p>Este es el primer mensaje especial para ti, lleno de amor y buenos recuerdos.</p>
+        </div>
+        <div class="message" style="display: none;">
+            <h2>Te quiero mucho</h2>
+            <p>Gracias por ser una persona increíble. Cada momento contigo es único y especial.</p>
+        </div>
+        <div class="message" style="display: none;">
+            <h2>Juntos para siempre</h2>
+            <p>Lo que más quiero es compartir mi vida contigo. ¡Tú y yo somos lo mejor!</p>
+        </div>
+        <div class="message" style="display: none;">
+            <h2>El primer recuerdo juntos</h2>
+            <p>Recuerdo aquel primer día que nos conocimos. Desde ese momento supe que eras especial para mí.</p>
+            <img src="../../public/images/PrimerViaje.jpg" alt="Primer recuerdo juntos" class="card-image">
+        </div>
+        <div class="message" style="display: none;">
+            <h2>Un viaje soñado</h2>
+            <p>Juntos hemos viajado, pero estoy seguro de que hay mucho más por descubrir.</p>
+            <img src="../../public/images/PrimerViaje.jpg" alt="Viaje juntos" class="card-image">
+        </div>
+        <div class="message" style="display: none;">
+            <h2>Un pequeño video</h2>
+            <p>Este video está lleno de recuerdos y amor. ¡Quiero que lo veas, es para ti!</p>
+            <video controls class="card-video">
+                <source src="../../public/images/TeEncontre.mp4" type="video/mp4" />
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </div>
+        <!-- Botón con el ícono de corazón -->
+        <button id="next-button">
+            <i class="fas fa-heart"></i> <!-- Icono de corazón -->
+        </button>
+    </section>
+
+    <!-- Pie de página con mensaje romántico -->
+    <footer id="footer">
+        <p>Gracias por estar conmigo en cada paso de este hermoso viaje. Te amo mucho.</p>
+    </footer>
+
+    <script src="../js/day4.js"></script>
+</body>
+</html>

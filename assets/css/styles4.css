@@ -1,0 +1,172 @@
+/* Estilos generales para el body */
+body {
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7d2d2; /* Fondo suave rosa claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Encabezado romántico */
+header {
+    background-color: #f7d2d2; /* Fondo suave rosa claro */
+    color: #b74d6e; /* Rosa oscuro para el texto */
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    color: #9c2a4b; /* Rosa cálido */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+    color: #7c4a65; /* Gris oscuro con toque morado */
+}
+
+/* Contenedor de los mensajes */
+#message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Estilo para cada mensaje */
+.message {
+    background-color: #f7d2d2; /* Fondo suave rosa claro */
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    color: #6b2e1f; /* Color marrón para el texto */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+    border: none; /* Sin bordes */
+    box-shadow: none; /* Sin sombra */
+    margin: 0; /* Sin margen */
+}
+
+/* Animación para que el mensaje aparezca suavemente */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Títulos dentro de los mensajes */
+.message h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #b74d6e;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Párrafos dentro de los mensajes */
+.message p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #7c4a65; /* Gris suave */
+}
+
+/* Estilo para las imágenes dentro de las cartas */
+.card-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Estilo para el video dentro de las cartas */
+.card-video {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* Botón con el ícono de corazón */
+#next-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2.5em;
+    color: #f06c64; /* Color suave de corazón */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Efecto hover en el icono */
+#next-button:hover {
+    color: #d1574d; /* Cambio de color cuando pasa el mouse */
+}
+
+/* Pie de página con mensaje romántico */
+#footer {
+    margin-top: 40px;
+    background-color: #f7d2d2;
+    color: #b74d6e;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Estilo para el texto del pie de página */
+#footer p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Estilo para el contenedor de mensajes extra */
+#extra-message {
+    margin-top: 40px;
+    background-color: #f7d2d2;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#extra-message h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #9c2a4b;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#extra-message p {
+    font-size: 1.1em;
+    color: #7c4a65;
+    line-height: 1.5em;
+}
+
+/* Estilo para las imágenes y videos dentro de los mensajes */
+.card-image, .card-video {
+    width: 100%;             /* Asegura que ambos ocupen el 100% del ancho disponible */
+    max-width: 350px;        /* Limita el tamaño máximo */
+    height: auto;            /* Mantiene la proporción */
+    border-radius: 10px;     /* Bordes redondeados */
+}
+
+
