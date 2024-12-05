@@ -169,4 +169,28 @@ header p {
     border-radius: 10px;     /* Bordes redondeados */
 }
 
+#counter-button {
+    background-color: #ffcccb; /* Color suave */
+    border: none;
+    font-size: 1.5em;
+    color: #d1574d; /* Color del texto */
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+#counter-button:hover {
+    background-color: #ffb3b3;
+    transform: scale(1.1); /* Efecto hover */
+}
+
+#counter-value {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}

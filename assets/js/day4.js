@@ -19,3 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextButton = document.querySelector('#next-button');
     nextButton.addEventListener('click', showNextMessage); // Llamamos a showNextMessage al hacer clic en el botón
 });
+
+// Inicializar contador
+let counter = 0;
+
+// Referencia al botón y al valor del contador
+const counterButton = document.querySelector('#counter-button');
+const counterValue = document.querySelector('#counter-value');
+
+// Incrementar contador al hacer clic
+counterButton.addEventListener('click', function() {
+    counter++; // Aumenta el contador
+    counterValue.textContent = counter; // Actualiza el valor visible
+});
