@@ -22,7 +22,7 @@ const game = new Phaser.Game(config);
 let player, flowers, obstacles, scoreText, livesText, retryButton, winText, loseText;
 let score = 0;
 let lives = 3;
-let maxScore = 100;
+let maxScore = 200;
 let cursors;
 
 function preload() {
