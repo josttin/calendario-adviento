@@ -149,7 +149,7 @@ function winGame() {
     // Pausar el juego y mostrar mensaje de victoria
     this.physics.pause();
     player.setTint(0x00ff00); // Cambiar color del jugador a verde al ganar
-    scoreText.setText('¡Ganaste! ya tienes derecho a abrir el regalo de hoy.');
+    scoreText.setText('¡Ganaste! Te ganaste 15 besitos');
     winText.setVisible(true); // Mostrar mensaje de victoria
     retryButton.setVisible(true); // Mostrar botón de reintentar
 }
