@@ -30,7 +30,7 @@ function preload() {
     this.load.image('player', '../../public/images/corazon.png');
     this.load.image('flower', '../../public/images/flores.png');
     this.load.image('obstacle', '../../public/images/roca.jpg');
-    this.load.image('button', '../../public/images/corazon.png');
+    this.load.image('button', '../../public/images/LT1.jpg');
 }
 
 function create() {
